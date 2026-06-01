@@ -3,6 +3,8 @@
  * Carousel shows up to 5; full list lives on Resources.
  */
 
+import { assetUrls } from "./assets";
+
 export interface FeedPost {
   id: string;
   title: string;
@@ -21,7 +23,7 @@ export const carouselPosts: FeedPost[] = [
     title: "Understanding Anxiety Together",
     description:
       "A gentle introduction to anxiety, coping strategies, and when to reach out for support.",
-    image: "/post1.jpeg",
+    image: assetUrls.anxietyPost,
     date: "2026-05-01",
     category: "Awareness",
     content: "Anxiety is a natural human response to stress. It is the body's alarm system warning us of potential danger. However, when this alarm system triggers too often or too intensely, it can interfere with our daily lives.\n\n### Coping Strategies\n* **Deep Breathing**: Slowing down your breath signals to your brain that you are safe. Inhale for 4 seconds, hold for 4, and exhale for 6.\n* **Grounding (5-4-3-2-1 technique)**: Bring yourself back to the present. Identify 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.\n* **Self-Compassion**: Acknowledge your anxiety without judgment. Gently remind yourself: 'I am feeling anxious right now, but I am safe and this feeling will pass.'",

@@ -11,6 +11,11 @@ const nextConfig = {
         hostname: "scontent.cdninstagram.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+        pathname: "/gh/sreedarssj/Bhaavam_NGO@main/public/**",
+      },
     ],
   },
 };
