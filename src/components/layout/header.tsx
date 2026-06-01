@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { assetUrls } from "@/data/assets";
 import { navigation, siteConfig } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -23,7 +24,7 @@ export function Header() {
         >
           <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-white/30 ring-offset-2 ring-offset-plum sm:h-14 sm:w-14">
             <Image
-              src="/icon.jpeg"
+              src={assetUrls.logo}
               alt=""
               fill
               className="object-cover"

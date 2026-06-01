@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
+import { assetUrls } from "@/data/assets";
 import { navigation, siteConfig, socialLinks } from "@/data/site";
 
 export function Footer() {
@@ -17,7 +18,7 @@ export function Footer() {
             >
               <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-blush-200 sm:h-14 sm:w-14">
                 <Image
-                  src="/icon.jpeg"
+                  src={assetUrls.logo}
                   alt=""
                   fill
                   className="object-cover"
