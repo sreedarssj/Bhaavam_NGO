@@ -1,6 +1,8 @@
 name = "bhaavam-foundation"
+main = "src/worker.ts"
 pages_build_output_dir = "out"
 compatibility_date = "2026-06-01"
 
 [assets]
 directory = "./out"
+binding = "STATIC_ASSETS"
