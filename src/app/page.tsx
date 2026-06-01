@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/home/hero-section";
 import { MissionSection } from "@/components/home/mission-section";
-import { InstagramSection } from "@/components/home/instagram-section";
+import { PostsCarousel } from "@/components/home/posts-carousel";
 import { ImpactStats } from "@/components/home/impact-stats";
 import { CtaSection } from "@/components/home/cta-section";
 
@@ -12,7 +12,7 @@ export default function HomePage() {
     <main id="main-content">
       <HeroSection />
       <MissionSection />
-      <InstagramSection />
+      <PostsCarousel />
       <ImpactStats />
       <CtaSection />
     </main>

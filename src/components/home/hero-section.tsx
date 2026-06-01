@@ -33,11 +33,11 @@ export function HeroSection() {
     >
       {/* Soft gradient background */}
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-br from-cream via-sage-50/40 to-mist-50/50"
+        className="absolute inset-0 -z-10 bg-gradient-to-br from-cream via-blush-50/40 to-mist-50/50"
         aria-hidden
       />
       <div
-        className="absolute -right-24 top-20 h-72 w-72 rounded-full bg-sage-100/50 blur-3xl"
+        className="absolute -right-24 top-20 h-72 w-72 rounded-full bg-blush-100/50 blur-3xl"
         aria-hidden
       />
       <div
@@ -45,16 +45,16 @@ export function HeroSection() {
         aria-hidden
       />
 
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-20">
         <motion.div
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto max-w-4xl text-center"
           variants={container}
           initial="hidden"
           animate="show"
         >
-          <motion.div variants={item}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-sage-200 bg-white/80 px-4 py-1.5 text-sm font-medium text-sage-600 shadow-sm">
-              <Sparkles className="h-4 w-4" aria-hidden />
+          <motion.div variants={item} className="mt-4">
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-blush-200 bg-white/80 px-5 py-2.5 text-base font-medium text-blush-700 shadow-sm sm:text-lg sm:px-6 sm:py-3">
+              <Sparkles className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden />
               {siteConfig.tagline}
             </span>
           </motion.div>
@@ -62,14 +62,14 @@ export function HeroSection() {
           <motion.h1
             id="hero-heading"
             variants={item}
-            className="mt-8 font-display text-4xl font-semibold leading-tight tracking-tight text-ink text-balance sm:text-5xl lg:text-6xl"
+            className="mt-10 font-display text-4xl font-semibold leading-[1.1] tracking-tight text-ink text-balance sm:text-5xl md:text-6xl lg:text-7xl"
           >
             {heroContent.headline}
           </motion.h1>
 
           <motion.p
             variants={item}
-            className="mt-6 text-lg leading-relaxed text-ink-muted sm:text-xl"
+            className="mt-8 text-xl leading-relaxed text-ink-muted sm:text-2xl"
           >
             {heroContent.subheadline}
           </motion.p>
@@ -91,7 +91,7 @@ export function HeroSection() {
               className="w-full sm:w-auto"
             >
               {"external" in heroContent.secondaryCta &&
-              heroContent.secondaryCta.external ? (
+                heroContent.secondaryCta.external ? (
                 <a
                   href={heroContent.secondaryCta.href}
                   target="_blank"
@@ -109,7 +109,7 @@ export function HeroSection() {
 
           <motion.p
             variants={item}
-            className="mt-8 text-sm text-ink-light"
+            className="mt-10 text-base text-ink-light sm:text-lg"
           >
             Book & film picks · Mental health insights ·{" "}
             {siteConfig.instagramHandle}

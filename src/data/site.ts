@@ -23,32 +23,9 @@ export const siteConfig = {
 
 export const navigation = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Initiatives", href: "/initiatives" },
   { label: "Resources", href: "/resources" },
   { label: "Get Involved", href: "/contact" },
-] as const;
-
-/** Emergency helplines — always visible on mental health sites */
-export const crisisHelplines = [
-  {
-    name: "iCall (TISS)",
-    number: "9152987821",
-    hours: "Mon–Sat, 8 AM – 10 PM",
-    tel: "tel:+919152987821",
-  },
-  {
-    name: "Vandrevala Foundation",
-    number: "1860 2662 345",
-    hours: "24/7",
-    tel: "tel:18602662345",
-  },
-  {
-    name: "Kiran Mental Health",
-    number: "1800-599-0019",
-    hours: "24/7 (Govt. of India)",
-    tel: "tel:18005990019",
-  },
+  { label: "About", href: "/about" },
 ] as const;
 
 export const missionPillars = [

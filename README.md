@@ -26,10 +26,10 @@ src/
 ├── app/              # Routes & global layout
 ├── components/
 │   ├── home/         # Landing page sections
-│   ├── layout/       # Header, footer, crisis banner
+│   ├── layout/       # Header, footer
 │   ├── motion/       # Framer Motion wrappers
 │   └── ui/           # Button, Card, etc.
-├── data/site.ts      # Centralized content & helplines
+├── data/site.ts      # Centralized content
 └── lib/utils.ts      # cn() helper
 ```
 
@@ -47,17 +47,13 @@ src/
 
 - Semantic HTML (`main`, `section`, `nav`, `footer`)
 - Skip-to-content link
-- ARIA labels on crisis helplines and navigation
+- ARIA labels on navigation and interactive controls
 - `prefers-reduced-motion` respected
 - WCAG-minded contrast (soft ink on cream backgrounds)
 
 ## Content source
 
 Foundation copy and recommendations are synced from the public Instagram profile **[@bhaavam_foundation](https://www.instagram.com/bhaavam_foundation/)**. Update `src/data/instagram.ts` when new posts go live.
-
-## Crisis Helplines
-
-Emergency numbers are configured in `src/data/site.ts` and shown in the sticky crisis banner. Verify numbers before production launch.
 
 ## License
 

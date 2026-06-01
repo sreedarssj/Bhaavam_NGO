@@ -1,21 +1,28 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Heart, Instagram } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { navigation, siteConfig, socialLinks } from "@/data/site";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-sage-100 bg-white" role="contentinfo">
+    <footer className="border-t border-blush-100 bg-white" role="contentinfo">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 font-display text-xl font-semibold text-ink"
+              className="inline-flex items-center gap-3 font-display text-2xl font-semibold text-ink sm:text-3xl"
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-sage-100 text-sage-500">
-                <Heart className="h-5 w-5" aria-hidden />
+              <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-blush-200 sm:h-14 sm:w-14">
+                <Image
+                  src="/icon.jpeg"
+                  alt=""
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 48px, 56px"
+                />
               </span>
               {siteConfig.name}
             </Link>
@@ -26,7 +33,7 @@ export function Footer() {
               href={siteConfig.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-sage-500 hover:text-sage-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 rounded-md"
+              className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-blush-600 hover:text-blush-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blush-400 rounded-md"
               aria-label={`Follow us on Instagram ${siteConfig.instagramHandle}`}
             >
               <Instagram className="h-4 w-4" aria-hidden />
@@ -43,7 +50,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-ink-muted hover:text-sage-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 rounded"
+                    className="text-sm text-ink-muted hover:text-blush-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blush-400 rounded"
                   >
                     {item.label}
                   </Link>
@@ -61,13 +68,9 @@ export function Footer() {
                 <li key={link.platform}>
                   <a
                     href={link.href}
-                    target={link.href.startsWith("mailto") ? undefined : "_blank"}
-                    rel={
-                      link.href.startsWith("mailto")
-                        ? undefined
-                        : "noopener noreferrer"
-                    }
-                    className="text-sm text-ink-muted hover:text-sage-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 rounded"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-ink-muted hover:text-blush-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blush-400 rounded"
                   >
                     {link.handle}
                   </a>
@@ -77,7 +80,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-sage-100 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-blush-100 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-ink-light">
             © {currentYear} {siteConfig.name}. All rights reserved.
           </p>

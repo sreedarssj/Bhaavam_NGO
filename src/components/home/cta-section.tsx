@@ -14,18 +14,18 @@ export function CtaSection() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-3xl bg-sage-500 px-8 py-14 text-center shadow-lg sm:px-16 sm:py-16">
+          <div className="relative overflow-hidden rounded-3xl bg-brand-gradient px-8 py-14 text-center shadow-lg sm:px-16 sm:py-16">
             <div
               className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.12),transparent_50%)]"
               aria-hidden
             />
             <h2
               id="cta-heading"
-              className="relative font-display text-2xl font-semibold text-white text-balance sm:text-3xl"
+              className="relative font-display text-3xl font-semibold text-white text-balance sm:text-4xl md:text-5xl"
             >
               Ready to take the first step?
             </h2>
-            <p className="relative mx-auto mt-4 max-w-xl text-base leading-relaxed text-sage-50">
+            <p className="relative mx-auto mt-4 max-w-xl text-base leading-relaxed text-blush-50">
               Connect with us on {siteConfig.instagramHandle} for mental health
               insights, book and film recommendations, and updates on our journey.
             </p>
@@ -34,7 +34,7 @@ export function CtaSection() {
                 asChild
                 size="lg"
                 variant="crisis"
-                className="w-full sm:w-auto text-sage-600"
+                className="w-full sm:w-auto text-blush-600"
               >
                 <a
                   href={instagramProfile.url}

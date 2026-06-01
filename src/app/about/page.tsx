@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main id="main-content" className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
-      <h1 className="font-display text-3xl font-semibold text-ink">About Us</h1>
+      <h1 className="font-display text-4xl font-semibold text-ink sm:text-5xl">About Us</h1>
 
       <p className="mt-6 text-lg leading-relaxed text-ink-muted">
         <strong className="font-medium text-ink">{siteConfig.name}</strong>{" "}
@@ -27,7 +27,7 @@ export default function AboutPage() {
         time, and asking for help is a courageous step.
       </p>
 
-      <blockquote className="mt-8 border-l-4 border-sage-300 pl-6 text-lg italic text-ink-muted">
+      <blockquote className="mt-8 border-l-4 border-blush-300 pl-6 text-lg italic text-ink-muted">
         &ldquo;What mental health needs is more sunlight, more candor and more
         unashamed conversation.&rdquo;
       </blockquote>

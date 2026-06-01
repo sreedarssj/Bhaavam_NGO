@@ -10,31 +10,37 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        /* Bhaavam calming palette */
+        /* Extracted from icon.jpeg — plum to orchid pink gradient */
         cream: {
           DEFAULT: "#FAF7F2",
           50: "#FDFCFA",
           100: "#FAF7F2",
           200: "#F3EDE3",
         },
-        sage: {
-          DEFAULT: "#6B9080",
-          50: "#F0F5F3",
-          100: "#D8E8E0",
-          200: "#B5D4C6",
-          300: "#8FB8A6",
-          400: "#6B9080",
-          500: "#527A6A",
-          600: "#3F5F52",
-          700: "#2F4840",
+        blush: {
+          DEFAULT: "#B5509C",
+          50: "#FDF5FA",
+          100: "#F8E6F2",
+          200: "#EEC9E4",
+          300: "#D99AC7",
+          400: "#C767A7",
+          500: "#B5509C",
+          600: "#9B3D87",
+          700: "#702963",
+          800: "#5A214F",
+        },
+        plum: {
+          DEFAULT: "#702963",
+          dark: "#662D8C",
+          light: "#9B3D87",
         },
         mist: {
-          DEFAULT: "#A4C3D2",
-          50: "#F2F7FA",
-          100: "#E3EEF4",
-          200: "#C5DCE8",
-          300: "#A4C3D2",
-          400: "#7BA8BE",
+          DEFAULT: "#D99AC7",
+          50: "#FDF5FA",
+          100: "#F8E6F2",
+          200: "#EEC9E4",
+          300: "#D99AC7",
+          400: "#C767A7",
         },
         warm: {
           DEFAULT: "#8B7355",
@@ -78,6 +84,11 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      backgroundImage: {
+        "brand-gradient": "linear-gradient(90deg, #702963 0%, #C767A7 100%)",
+        "brand-gradient-soft":
+          "linear-gradient(135deg, rgba(112, 41, 99, 0.08) 0%, rgba(199, 103, 167, 0.12) 100%)",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],

@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Outfit } from "next/font/google";
-import { CrisisBanner } from "@/components/layout/crisis-banner";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/data/site";
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6B9080",
+  themeColor: "#702963",
   width: "device-width",
   initialScale: 1,
 };
@@ -56,13 +55,12 @@ export default function RootLayout({
         {/* Skip link for keyboard users */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-ink focus:shadow-lg focus:ring-2 focus:ring-sage-400"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-ink focus:shadow-lg focus:ring-2 focus:ring-blush-400"
         >
           Skip to main content
         </a>
 
         <div className="sticky top-0 z-50">
-          <CrisisBanner />
           <Header />
         </div>
 

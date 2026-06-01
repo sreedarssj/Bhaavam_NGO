@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main id="main-content" className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:py-24">
-      <h1 className="font-display text-3xl font-semibold text-ink">
+      <h1 className="font-display text-4xl font-semibold text-ink sm:text-5xl">
         Get Involved
       </h1>
       <p className="mt-4 text-lg leading-relaxed text-ink-muted">
@@ -23,9 +23,9 @@ export default function ContactPage() {
         message on Instagram.
       </p>
 
-      <div className="mt-10 rounded-2xl border border-sage-100 bg-sage-50/50 p-8">
+      <div className="mt-10 rounded-2xl border border-blush-100 bg-blush-50/50 p-8">
         <div className="flex items-center gap-3">
-          <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sage-100 text-sage-600">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full bg-blush-100 text-blush-600">
             <Instagram className="h-6 w-6" aria-hidden />
           </span>
           <div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
       {siteConfig.email ? (
         <p className="mt-8 flex items-center gap-2 text-sm text-ink-muted">
           <Mail className="h-4 w-4" aria-hidden />
-          <a href={`mailto:${siteConfig.email}`} className="text-sage-600 hover:underline">
+          <a href={`mailto:${siteConfig.email}`} className="text-blush-600 hover:underline">
             {siteConfig.email}
           </a>
         </p>
