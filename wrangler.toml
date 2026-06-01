@@ -1,4 +1,4 @@
-name = "bhaavam-foundation"
+name = "bhaavamngo"
 main = "src/worker.ts"
 pages_build_output_dir = "out"
 compatibility_date = "2026-06-01"
